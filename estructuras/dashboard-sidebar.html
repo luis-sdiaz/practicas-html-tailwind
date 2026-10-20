@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Panel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 text-stone-800 min-h-screen flex">
+
+  <!-- ========================================== -->
+  <!-- 1. SIDEBAR (Menú lateral izquierdo)       -->
+  <!-- ========================================== -->
+  <aside class="w-64 bg-stone-900 text-stone-300 p-6 flex flex-col justify-between shrink-0">
+    
+    <!-- Parte superior del sidebar -->
+    <div class="flex flex-col gap-8">
+      
+      <!-- Logo o Nombre del Sistema -->
+      <div class="flex items-center gap-3 text-white font-bold text-lg tracking-wide">
+        <div class="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center text-sm font-black text-white">
+          P
+        </div>
+        <span>Panel Admin</span>
+      </div>
+
+      <!-- Enlaces de navegación vertical -->
+      <nav class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wider">
+        <!-- Ítem activo (resaltado) -->
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 bg-stone-800 text-white rounded-lg border-l-4 border-orange-500">
+          <span>📊</span>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-stone-800 hover:text-white rounded-lg transition">
+          <span>📦</span>
+          <span>Productos</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-stone-800 hover:text-white rounded-lg transition">
+          <span>👥</span>
+          <span>Clientes</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-stone-800 hover:text-white rounded-lg transition">
+          <span>📈</span>
+          <span>Ventas</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 hover:bg-stone-800 hover:text-white rounded-lg transition">
+          <span>⚙️</span>
+          <span>Ajustes</span>
+        </a>
+      </nav>
+
+    </div>
+
+    <!-- Parte inferior del sidebar (Usuario / Cerrar sesión) -->
+    <div class="pt-4 border-t border-stone-800 flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-stone-700 flex items-center justify-center text-white text-xs">
+        👤
+      </div>
+      <div class="flex flex-col">
+        <span class="text-xs font-bold text-white leading-tight">Admin Usuario</span>
+        <span class="text-[10px] text-stone-500">admin@correo.com</span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ========================================== -->
+  <!-- 2. CONTENIDO DERECHO (Header + Main)       -->
+  <!-- ========================================== -->
+  <div class="flex-1 flex flex-col min-w-0">
+
+    <!-- Barra superior del contenido -->
+    <header class="h-16 bg-white border-b border-stone-200 px-8 flex items-center justify-between">
+      <h1 class="text-lg font-black uppercase text-stone-900 tracking-wider">
+        Resumen General
+      </h1>
+      <!-- Buscador rápido / Notificaciones -->
+      <div class="flex items-center gap-4">
+        <input type="text" placeholder="Buscar..." class="px-3 py-1.5 bg-stone-100 rounded-lg text-xs border border-stone-300 focus:outline-none">
+        <button class="text-base">🔔</button>
+      </div>
+    </header>
+
+    <!-- Área de trabajo con tarjetas de métricas -->
+    <main class="flex-1 p-8 flex flex-col gap-6 overflow-y-auto">
+
+      <!-- Fila de 3 tarjetas de métricas -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Tarjeta Métrica 1 -->
+        <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm flex flex-col gap-2">
+          <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Ventas Totales</span>
+          <span class="text-2xl font-black text-stone-900">$14,250</span>
+          <span class="text-[11px] text-emerald-600 font-semibold">↑ +12% este mes</span>
+        </div>
+
+        <!-- Tarjeta Métrica 2 -->
+        <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm flex flex-col gap-2">
+          <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Nuevos Clientes</span>
+          <span class="text-2xl font-black text-stone-900">328</span>
+          <span class="text-[11px] text-emerald-600 font-semibold">↑ +5% este mes</span>
+        </div>
+
+        <!-- Tarjeta Métrica 3 -->
+        <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm flex flex-col gap-2">
+          <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Pedidos Pendientes</span>
+          <span class="text-2xl font-black text-stone-900">18</span>
+          <span class="text-[11px] text-amber-600 font-semibold">● En proceso</span>
+        </div>
+
+      </section>
+
+      <!-- Caja principal grande (Tabla o gráfico simulado) -->
+      <section class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex-1 min-h-[300px] flex flex-col gap-4">
+        <h2 class="text-sm font-black uppercase text-stone-900 tracking-wider">
+          Actividad Reciente
+        </h2>
+        <div class="border border-dashed border-stone-300 rounded-xl flex-1 flex items-center justify-center text-stone-400 text-xs">
+          [Aquí irá la tabla de datos, lista o gráfico que pida el profesor]
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
