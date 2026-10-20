@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crust Pizza Co</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50 text-stone-800 min-h-screen flex flex-col font-sans">
+
+  <!-- ========================================== -->
+  <!-- 1. HEADER (Cabecera)                       -->
+  <!-- ========================================== -->
+  <header class="w-full bg-amber-50 border-b border-stone-200 py-4 px-6 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      
+      <!-- Lado Izquierdo: Menú -->
+      <nav class="flex items-center gap-4 text-xs font-bold uppercase tracking-wider">
+        <a href="#" class="px-4 py-2 bg-orange-600 text-white rounded-full">Home</a>
+        <a href="#" class="text-stone-700 hover:text-orange-600">Menu</a>
+        <a href="#" class="text-stone-700 hover:text-orange-600">Locations</a>
+        <a href="#" class="text-stone-700 hover:text-orange-600">Order Online</a>
+      </nav>
+
+      <!-- Centro: Logo circular -->
+      <div class="w-12 h-12 bg-stone-900 rounded-full border-2 border-stone-300 flex flex-col items-center justify-center text-white text-[10px] font-black uppercase text-center leading-tight">
+        <span>Crust</span>
+        <span class="text-[7px] text-stone-400 font-normal">Pizza</span>
+      </div>
+
+      <!-- Lado Derecho: Enlaces y botón -->
+      <div class="flex items-center gap-4 text-xs font-bold uppercase tracking-wider">
+        <a href="#" class="text-stone-700 hover:text-orange-600">About</a>
+        <a href="#" class="text-stone-700 hover:text-orange-600">Contact</a>
+        <div class="w-7 h-7 bg-orange-600 text-white rounded-full flex items-center justify-center text-xs">👤</div>
+        <a href="#" class="text-stone-700 hover:text-orange-600">Call Now</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 2. CONTENIDO PRINCIPAL                     -->
+  <!-- ========================================== -->
+  <main class="flex-1 w-full max-w-6xl mx-auto px-6 py-8 flex flex-col gap-12">
+
+    <!-- SECCIÓN HERO (Banner con imagen de fondo simulada) -->
+    <section class="w-full h-80 bg-stone-800 rounded-3xl relative overflow-hidden flex items-center p-8 text-white">
+      <!-- Tarjeta oscura superpuesta -->
+      <div class="bg-black/70 backdrop-blur-sm p-6 rounded-2xl max-w-md flex flex-col gap-3">
+        <h1 class="text-2xl font-black uppercase tracking-tight leading-snug">
+          For delicious, made-from scratch pizzas
+        </h1>
+        <p class="text-xs text-stone-300">
+          Masa artesanal horneada al punto exacto con ingredientes frescos del día.
+        </p>
+        <button class="w-fit px-5 py-2 bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs uppercase rounded-full transition">
+          Order Online
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: OUR MENU (Cuadrícula de productos) -->
+    <section class="flex flex-col gap-6">
+      <h2 class="text-lg font-black uppercase tracking-wider text-stone-900">
+        Our Menu
+      </h2>
+
+      <!-- Grid de 4 columnas -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        
+        <!-- Tarjeta 1 -->
+        <div class="bg-white p-3 rounded-2xl border border-stone-200 flex flex-col gap-3 shadow-sm">
+          <div class="w-full h-28 bg-stone-200 rounded-xl relative flex items-center justify-center text-xs text-stone-500">
+            [Foto Pizza]
+            <span class="absolute bottom-2 right-2 bg-orange-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">$12</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-black uppercase text-stone-900">Chicken Parm</h3>
+            <p class="text-[10px] text-stone-500 line-clamp-2 mt-1">Pollo crujiente, queso parmesano y salsa pomodoro artesanal.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="bg-white p-3 rounded-2xl border border-stone-200 flex flex-col gap-3 shadow-sm">
+          <div class="w-full h-28 bg-stone-200 rounded-xl relative flex items-center justify-center text-xs text-stone-500">
+            [Foto Pizza]
+            <span class="absolute bottom-2 right-2 bg-orange-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">$14</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-black uppercase text-stone-900">Chicken Alfredo</h3>
+            <p class="text-[10px] text-stone-500 line-clamp-2 mt-1">Salsa blanca cremosa, trozos de pechuga y finas hierbas.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="bg-white p-3 rounded-2xl border border-stone-200 flex flex-col gap-3 shadow-sm">
+          <div class="w-full h-28 bg-stone-200 rounded-xl relative flex items-center justify-center text-xs text-stone-500">
+            [Foto Pizza]
+            <span class="absolute bottom-2 right-2 bg-orange-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">$11</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-black uppercase text-stone-900">Spaghetti & Balls</h3>
+            <p class="text-[10px] text-stone-500 line-clamp-2 mt-1">Pasta italiana clásica con albóndigas horneadas al horno.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="bg-white p-3 rounded-2xl border border-stone-200 flex flex-col gap-3 shadow-sm">
+          <div class="w-full h-28 bg-stone-200 rounded-xl relative flex items-center justify-center text-xs text-stone-500">
+            [Foto Pizza]
+            <span class="absolute bottom-2 right-2 bg-orange-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">$10</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-black uppercase text-stone-900">Baked Mac & Cheese</h3>
+            <p class="text-[10px] text-stone-500 line-clamp-2 mt-1">Macarrones con queso cheddar fundido y corteza gratinada.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botón centrado ver menú completo -->
+      <div class="flex justify-center mt-2">
+        <button class="px-6 py-2 bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold uppercase rounded-full shadow transition">
+          View Our Complete Menu
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 3. FOOTER (Pie de página)                  -->
+  <!-- ========================================== -->
+  <footer class="w-full bg-white border-t border-stone-200 py-6 px-6 mt-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-600">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-stone-900 rounded-full flex items-center justify-center text-white text-[9px] font-black">C</div>
+        <span class="font-bold uppercase tracking-wider text-stone-900">Want to place an order now?</span>
+      </div>
+      <div class="flex gap-6 font-semibold uppercase text-[10px] tracking-wider">
+        <a href="#" class="hover:text-orange-600">Menu</a>
+        <a href="#" class="hover:text-orange-600">Catering</a>
+        <a href="#" class="hover:text-orange-600">Privacy</a>
+        <a href="#" class="hover:text-orange-600">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
