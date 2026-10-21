@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla Universal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans min-h-screen flex flex-col justify-between">
+
+  <!-- ========================================== -->
+  <!-- 1. HEADER / NAVEGACIÓN UNIVERSAL          -->
+  <!-- ========================================== -->
+  <header class="w-full bg-white border-b border-stone-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Logo genérico -->
+      <div class="flex items-center gap-2 font-black text-lg tracking-tight text-stone-900">
+        <span class="w-8 h-8 bg-stone-900 text-white rounded-lg flex items-center justify-center text-sm font-bold">
+          ★
+        </span>
+        <span>BRANDNAME</span>
+      </div>
+
+      <!-- Enlaces de navegación -->
+      <nav class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-stone-600">
+        <a href="#" class="text-stone-900 hover:text-stone-600 transition">Inicio</a>
+        <a href="#" class="hover:text-stone-900 transition">Servicios</a>
+        <a href="#" class="hover:text-stone-900 transition">Catálogo</a>
+        <a href="#" class="hover:text-stone-900 transition">Contacto</a>
+      </nav>
+
+      <!-- Botón de acción rápida -->
+      <button class="px-5 py-2 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold rounded-xl transition shadow-sm">
+        Acción Principal
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 2. HERO / SECCIÓN PRINCIPAL               -->
+  <!-- ========================================== -->
+  <section class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texto y Llamado a la Acción -->
+    <div class="flex flex-col gap-6">
+      <span class="text-xs font-black uppercase tracking-widest text-stone-400">
+        Etiqueta Secundaria / Categoría
+      </span>
+      <h1 class="text-4xl md:text-5xl font-black text-stone-900 tracking-tight leading-tight">
+        Título de impacto para el negocio o producto.
+      </h1>
+      <p class="text-sm text-stone-500 leading-relaxed max-w-lg">
+        Breve descripción de dos líneas que explica el valor del servicio, producto o plataforma que esté en la imagen.
+      </p>
+      
+      <!-- Grupo de Botones -->
+      <div class="flex items-center gap-4 pt-2">
+        <button class="px-6 py-3 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow transition">
+          Empezar Ahora
+        </button>
+        <button class="px-6 py-3 bg-white hover:bg-stone-100 text-stone-800 text-xs font-bold uppercase tracking-wider rounded-xl border border-stone-300 transition">
+          Más Detalles
+        </button>
+      </div>
+    </div>
+
+    <!-- Imagen Principal Adaptable -->
+    <div class="w-full h-80 md:h-96 rounded-3xl overflow-hidden bg-stone-200 border border-stone-200 shadow-md">
+      <img 
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700" 
+        alt="Foto Principal" 
+        class="w-full h-full object-cover"
+      >
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 3. GRILLA DE 3 TARJETAS / PRODUCTOS        -->
+  <!-- ========================================== -->
+  <section class="max-w-6xl mx-auto px-6 py-12 w-full flex flex-col gap-8">
+    
+    <div class="flex items-center justify-between">
+      <div>
+        <h2 class="text-2xl font-black text-stone-900 tracking-tight">Catálogo Destacado</h2>
+        <p class="text-xs text-stone-400 mt-1">Elementos o servicios principales</p>
+      </div>
+      <a href="#" class="text-xs font-bold text-stone-900 hover:underline">Ver todos ➔</a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- TARJETA 1 -->
+      <div class="bg-white rounded-3xl p-4 border border-stone-200 shadow-sm flex flex-col gap-3">
+        <div class="w-full h-44 rounded-2xl overflow-hidden bg-stone-100 relative">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Item" class="w-full h-full object-cover">
+          <span class="absolute bottom-2 right-2 bg-stone-900 text-white text-[11px] font-black px-2.5 py-0.5 rounded-full shadow-sm">
+            $99.00
+          </span>
+        </div>
+        <div>
+          <h3 class="text-sm font-black text-stone-900 uppercase">Nombre del Elemento 1</h3>
+          <p class="text-xs text-stone-500 mt-1">Descripción breve del producto o servicio a mostrar.</p>
+        </div>
+        <button class="w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold uppercase rounded-xl transition mt-auto">
+          Seleccionar
+        </button>
+      </div>
+
+      <!-- TARJETA 2 -->
+      <div class="bg-white rounded-3xl p-4 border border-stone-200 shadow-sm flex flex-col gap-3">
+        <div class="w-full h-44 rounded-2xl overflow-hidden bg-stone-100 relative">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Item" class="w-full h-full object-cover">
+          <span class="absolute bottom-2 right-2 bg-stone-900 text-white text-[11px] font-black px-2.5 py-0.5 rounded-full shadow-sm">
+            $149.00
+          </span>
+        </div>
+        <div>
+          <h3 class="text-sm font-black text-stone-900 uppercase">Nombre del Elemento 2</h3>
+          <p class="text-xs text-stone-500 mt-1">Descripción breve del producto o servicio a mostrar.</p>
+        </div>
+        <button class="w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold uppercase rounded-xl transition mt-auto">
+          Seleccionar
+        </button>
+      </div>
+
+      <!-- TARJETA 3 -->
+      <div class="bg-white rounded-3xl p-4 border border-stone-200 shadow-sm flex flex-col gap-3">
+        <div class="w-full h-44 rounded-2xl overflow-hidden bg-stone-100 relative">
+          <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500" alt="Item" class="w-full h-full object-cover">
+          <span class="absolute bottom-2 right-2 bg-stone-900 text-white text-[11px] font-black px-2.5 py-0.5 rounded-full shadow-sm">
+            $199.00
+          </span>
+        </div>
+        <div>
+          <h3 class="text-sm font-black text-stone-900 uppercase">Nombre del Elemento 3</h3>
+          <p class="text-xs text-stone-500 mt-1">Descripción breve del producto o servicio a mostrar.</p>
+        </div>
+        <button class="w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold uppercase rounded-xl transition mt-auto">
+          Seleccionar
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 4. FOOTER SIMPLE                          -->
+  <!-- ========================================== -->
+  <footer class="w-full bg-white border-t border-stone-200 py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+      <span>© 2026 Plataforma UI. Todos los derechos reservados.</span>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-stone-700">Términos</a>
+        <a href="#" class="hover:text-stone-700">Privacidad</a>
+        <a href="#" class="hover:text-stone-700">Soporte</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
