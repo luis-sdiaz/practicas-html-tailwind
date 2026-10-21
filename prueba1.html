@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Estructura Completa</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300 min-h-screen flex flex-col justify-between">
+
+	<!-- 1. HEADER con NAV adentro -->
+	<header class="h-20 w-full bg-white px-8 flex items-center justify-between border-b border-gray-200">
+		<span class="font-bold text-gray-800 text-lg">Mi Sitio</span>
+		<nav class="flex gap-6 text-sm font-semibold text-gray-600">
+			<a href="#" class="hover:text-black">Inicio</a>
+			<a href="#" class="hover:text-black">Artículos</a>
+			<a href="#" class="hover:text-black">Contacto</a>
+		</nav>
+	</header>
+
+	<!-- 2. CONTENEDOR CENTRAL (flex para poner aside y main lado a lado) -->
+	<div class="flex flex-1 w-full">
+
+		<!-- ASIDE (ancho fijo con w-64 y shrink-0 para que no se encoja) -->
+		<aside class="w-64 bg-gray-800 text-white p-6 shrink-0 flex flex-col gap-4">
+			<span class="text-xs font-bold uppercase text-gray-400">Menú Lateral</span>
+			<ul class="flex flex-col gap-2 text-sm">
+				<li class="p-2 bg-gray-700 rounded-lg cursor-pointer">Panel Principal</li>
+				<li class="p-2 hover:bg-gray-700 rounded-lg cursor-pointer">Mensajes</li>
+				<li class="p-2 hover:bg-gray-700 rounded-lg cursor-pointer">Ajustes</li>
+			</ul>
+		</aside>
+
+		<!-- MAIN (flex-1 para que ocupe todo el espacio sobrante de la derecha) -->
+		<main class="flex-1 p-8 flex flex-col gap-8 bg-gray-100">
+
+			<!-- SECTION: Bloque temático dentro del main -->
+			<section class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+				<h2 class="text-xl font-bold text-gray-800 mb-2">Sección de Bienvenida</h2>
+				<p class="text-sm text-gray-600">Este es el bloque principal de contenido dentro del section.</p>
+			</section>
+
+			<!-- ARTICLE: Contenido independiente o tarjeta de publicación -->
+			<article class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col gap-3">
+				<span class="text-xs font-bold text-blue-600 uppercase">Publicación</span>
+				<h3 class="text-lg font-bold text-gray-900">Título del Artículo</h3>
+				<p class="text-sm text-gray-600">
+					La etiqueta article representa una pieza completa e independiente de contenido, como un post de blog, noticia o tarjeta de producto.
+				</p>
+			</article>
+
+		</main>
+
+	</div>
+
+	<!-- 3. FOOTER -->
+	<footer class="h-16 w-full bg-white border-t border-gray-200 flex items-center justify-center text-xs text-gray-500">
+		© 2026 Todos los derechos reservados.
+	</footer>
+
+</body>
+</html>
