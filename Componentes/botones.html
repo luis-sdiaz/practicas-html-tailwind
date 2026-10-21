@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Completo de Botones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 p-8 font-sans text-stone-800">
+
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-3xl border border-stone-200 shadow-sm flex flex-col gap-10">
+    
+    <header class="border-b border-stone-200 pb-4">
+      <h1 class="text-2xl font-black text-stone-900 uppercase tracking-tight">Catálogo de Botones para Examen</h1>
+      <p class="text-xs text-stone-500">Copia y pega la línea exacta que coincida con la imagen de tu prueba.</p>
+    </header>
+
+    <!-- ============================================================== -->
+    <!-- 1. BOTONES CON ICONO INTEGRADO (Los que siempre evalúan)       -->
+    <!-- ============================================================== -->
+    <section class="flex flex-col gap-4">
+      <h2 class="text-xs font-black uppercase tracking-wider text-orange-600">1. Botones con Icono Adentro</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <!-- A. Icono a la izquierda + Texto (El clásico de descargas o compras) -->
+        <button class="flex items-center justify-center gap-2 px-5 py-2.5 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold rounded-xl shadow transition">
+          <span class="text-sm">🛒</span>
+          <span>Añadir al carrito</span>
+        </button>
+
+        <!-- B. Texto + Flecha a la derecha (Botón "Ver más" o "Siguiente") -->
+        <button class="flex items-center justify-center gap-2 px-5 py-2.5 bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold uppercase tracking-wider rounded-full shadow transition">
+          <span>Continuar</span>
+          <span class="text-sm">➔</span>
+        </button>
+
+        <!-- C. Botón con icono SVG profesional integrado (Descarga / Cloud) -->
+        <button class="flex items-center justify-center gap-2 px-5 py-2.5 bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold rounded-xl transition">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
+          </svg>
+          <span>Descargar Archivo</span>
+        </button>
+
+        <!-- D. Botón estilo Acción Rápida con cajita de icono separada (Fintech) -->
+        <button class="flex items-center gap-3 px-4 py-2 bg-stone-50 hover:bg-stone-100 text-stone-800 text-xs font-bold rounded-2xl border border-stone-200 transition">
+          <span class="w-7 h-7 bg-stone-900 text-white rounded-lg flex items-center justify-center text-xs">
+            ⇄
+          </span>
+          <span>Transferir Dinero</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 2. BOTONES BÁSICOS Y JERARQUÍAS (Primario, Secundario, Peligro)-->
+    <!-- ============================================================== -->
+    <section class="flex flex-col gap-4">
+      <h2 class="text-xs font-black uppercase tracking-wider text-stone-500">2. Jerarquía Estándar</h2>
+      
+      <div class="flex flex-wrap items-center gap-4">
+
+        <!-- Primario Oscuro -->
+        <button class="px-5 py-2.5 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold rounded-xl shadow transition">
+          Guardar Cambios
+        </button>
+
+        <!-- Secundario / Borde (Outline) -->
+        <button class="px-5 py-2.5 bg-transparent hover:bg-stone-100 text-stone-700 text-xs font-bold rounded-xl border border-stone-300 transition">
+          Cancelar
+        </button>
+
+        <!-- Éxito / Verde -->
+        <button class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl shadow transition">
+          Aprobar Pedido
+        </button>
+
+        <!-- Peligro / Eliminar -->
+        <button class="px-5 py-2.5 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold rounded-xl shadow transition">
+          Eliminar Cuenta
+        </button>
+
+        <!-- Suave / Fantasma (Ghost) -->
+        <button class="px-5 py-2.5 hover:bg-stone-100 text-stone-500 hover:text-stone-800 text-xs font-bold rounded-xl transition">
+          Saltar Paso
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 3. BOTONES DE FORMULARIOS Y TAMAÑOS EXTREMOS                  -->
+    <!-- ============================================================== -->
+    <section class="flex flex-col gap-4">
+      <h2 class="text-xs font-black uppercase tracking-wider text-stone-500">3. Tamaños y Ancho Completo</h2>
+
+      <!-- Ancho Completo (w-full para formularios o modales) -->
+      <button class="w-full py-3 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition">
+        Iniciar Sesión (w-full)
+      </button>
+
+      <!-- Botón Pequeño / Compacto (Para tablas o barras laterales) -->
+      <div class="flex items-center gap-4">
+        <button class="px-3 py-1 bg-stone-100 hover:bg-stone-200 text-stone-700 text-[11px] font-bold rounded-lg border border-stone-300 transition">
+          Editar
+        </button>
+
+        <!-- Botón Deshabilitado (Disabled) -->
+        <button disabled class="px-5 py-2.5 bg-stone-200 text-stone-400 text-xs font-bold rounded-xl cursor-not-allowed">
+          No disponible
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 4. BOTONES CIRCULARES (Solo Icono / Notificaciones)            -->
+    <!-- ============================================================== -->
+    <section class="flex flex-col gap-4">
+      <h2 class="text-xs font-black uppercase tracking-wider text-stone-500">4. Solo Iconos (Redondos y Flotantes)</h2>
+
+      <div class="flex items-center gap-4">
+        
+        <!-- Icono redondo normal -->
+        <button class="w-10 h-10 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-700 flex items-center justify-center text-sm transition">
+          🔍
+        </button>
+
+        <!-- Icono con notificación roja flotante (Badge) -->
+        <button class="w-10 h-10 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-700 flex items-center justify-center text-sm relative transition">
+          🔔
+          <span class="absolute top-1 right-1 w-2.5 h-2.5 bg-rose-500 rounded-full border-2 border-white"></span>
+        </button>
+
+        <!-- Botón flotante grande circular (FAB) -->
+        <button class="w-12 h-12 rounded-full bg-orange-600 hover:bg-orange-700 text-white flex items-center justify-center text-xl font-bold shadow-lg transition">
+          ＋
+        </button>
+
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
