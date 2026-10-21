@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes y Precios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 text-stone-800 min-h-screen py-16 px-6 font-sans">
+
+  <!-- CONTENEDOR PRINCIPAL CENTRADO -->
+  <div class="max-w-6xl mx-auto flex flex-col items-center gap-12">
+
+    <!-- 1. Encabezado de la sección -->
+    <div class="text-center max-w-xl flex flex-col gap-3">
+      <span class="text-xs font-black uppercase tracking-widest text-orange-600">
+        Nuestras Tarifas
+      </span>
+      <h1 class="text-3xl md:text-4xl font-black text-stone-900 uppercase tracking-tight">
+        Elige el plan ideal
+      </h1>
+      <p class="text-xs md:text-sm text-stone-500">
+        Selecciona la opción que mejor se adapte a tus necesidades sin contratos forzosos.
+      </p>
+    </div>
+
+    <!-- 2. Cuadrícula de 3 tarjetas -->
+    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+      <!-- TARJETA 1: Plan Básico -->
+      <div class="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm flex flex-col justify-between gap-6">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-base font-bold uppercase tracking-wider text-stone-700">Básico</h3>
+          <div class="flex items-baseline gap-1">
+            <span class="text-4xl font-black text-stone-900">$19</span>
+            <span class="text-xs text-stone-500 font-medium">/mes</span>
+          </div>
+          <p class="text-xs text-stone-500">Ideal para personas o proyectos individuales.</p>
+          
+          <!-- Lista de beneficios -->
+          <ul class="flex flex-col gap-3 text-xs text-stone-600 pt-4 border-t border-stone-100">
+            <li class="flex items-center gap-2"><span>✔</span> Acceso a 1 usuario</li>
+            <li class="flex items-center gap-2"><span>✔</span> Soporte por correo</li>
+            <li class="flex items-center gap-2 text-stone-400"><span>✕</span> Reportes avanzados</li>
+          </ul>
+        </div>
+
+        <button class="w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold text-xs uppercase tracking-wider rounded-xl transition">
+          Elegir Plan
+        </button>
+      </div>
+
+      <!-- TARJETA 2: Plan Pro (Destacado en el centro) -->
+      <div class="bg-stone-900 text-white rounded-3xl p-8 border-2 border-orange-500 shadow-xl flex flex-col justify-between gap-6 relative md:-translate-y-2">
+        <!-- Badge flotante -->
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full shadow">
+          Más Popular
+        </span>
+
+        <div class="flex flex-col gap-4">
+          <h3 class="text-base font-bold uppercase tracking-wider text-orange-400">Pro</h3>
+          <div class="flex items-baseline gap-1">
+            <span class="text-4xl font-black text-white">$49</span>
+            <span class="text-xs text-stone-400 font-medium">/mes</span>
+          </div>
+          <p class="text-xs text-stone-400">Para equipos en crecimiento y negocios activos.</p>
+          
+          <!-- Lista de beneficios -->
+          <ul class="flex flex-col gap-3 text-xs text-stone-300 pt-4 border-t border-stone-800">
+            <li class="flex items-center gap-2"><span>✔</span> Hasta 5 usuarios</li>
+            <li class="flex items-center gap-2"><span>✔</span> Soporte 24/7 prioritario</li>
+            <li class="flex items-center gap-2"><span>✔</span> Reportes avanzados</li>
+            <li class="flex items-center gap-2"><span>✔</span> Exportación de datos</li>
+          </ul>
+        </div>
+
+        <button class="w-full py-2.5 bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow transition">
+          Empezar Ahora
+        </button>
+      </div>
+
+      <!-- TARJETA 3: Plan Empresarial -->
+      <div class="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm flex flex-col justify-between gap-6">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-base font-bold uppercase tracking-wider text-stone-700">Empresarial</h3>
+          <div class="flex items-baseline gap-1">
+            <span class="text-4xl font-black text-stone-900">$99</span>
+            <span class="text-xs text-stone-500 font-medium">/mes</span>
+          </div>
+          <p class="text-xs text-stone-500">Para empresas grandes con necesidades a medida.</p>
+          
+          <!-- Lista de beneficios -->
+          <ul class="flex flex-col gap-3 text-xs text-stone-600 pt-4 border-t border-stone-100">
+            <li class="flex items-center gap-2"><span>✔</span> Usuarios ilimitados</li>
+            <li class="flex items-center gap-2"><span>✔</span> Gerente de cuenta dedicado</li>
+            <li class="flex items-center gap-2"><span>✔</span> Seguridad personalizada</li>
+          </ul>
+        </div>
+
+        <button class="w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold text-xs uppercase tracking-wider rounded-xl transition">
+          Contactar Ventas
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
