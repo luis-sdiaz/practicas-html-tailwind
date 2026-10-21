@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moléculas - Secciones Hero</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 p-6 md:p-10 flex flex-col gap-14 font-sans text-stone-800">
+
+  <!-- ============================================================== -->
+  <!-- 1. HERO SPLIT (2 Columnas: Texto Izq + Imagen Der)            -->
+  <!-- ============================================================== -->
+  <div class="flex flex-col gap-2">
+    <span class="text-xs font-black uppercase tracking-wider text-orange-600">Variante 1: Dos Columnas (Clásico de Productos/Servicios)</span>
+    
+    <section class="w-full bg-white border border-stone-200 rounded-3xl p-8 md:p-12 shadow-sm grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Columna Texto -->
+      <div class="flex flex-col gap-5">
+        <span class="w-fit bg-stone-100 text-stone-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full border border-stone-200">
+          Nueva Colección / Temporada
+        </span>
+        <h1 class="text-3xl md:text-5xl font-black text-stone-900 tracking-tight leading-tight">
+          Diseño moderno para potenciar tu estilo diario.
+        </h1>
+        <p class="text-xs md:text-sm text-stone-500 leading-relaxed max-w-md">
+          Descubre artículos seleccionados con los más altos estándares de calidad y durabilidad garantizada.
+        </p>
+        
+        <!-- Botones de Acción -->
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <button class="px-6 py-3 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow transition">
+            Explorar Catálogo
+          </button>
+          <button class="px-6 py-3 bg-transparent hover:bg-stone-100 text-stone-800 text-xs font-bold uppercase tracking-wider rounded-xl border border-stone-300 transition">
+            Saber Más
+          </button>
+        </div>
+      </div>
+
+      <!-- Columna Imagen con object-cover -->
+      <div class="w-full h-72 md:h-96 rounded-2xl overflow-hidden bg-stone-100 relative shadow-inner">
+        <img 
+          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" 
+          alt="Hero Imagen" 
+          class="w-full h-full object-cover"
+        >
+      </div>
+
+    </section>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- 2. HERO CENTRADO (Texto al centro + Buscador o Call to Action) -->
+  <!-- ============================================================== -->
+  <div class="flex flex-col gap-2">
+    <span class="text-xs font-black uppercase tracking-wider text-stone-500">Variante 2: Centrado Minimalista (Landing / Buscador)</span>
+    
+    <section class="w-full bg-white border border-stone-200 rounded-3xl p-10 md:p-16 shadow-sm flex flex-col items-center text-center gap-6">
+      
+      <!-- Badge de Anuncio -->
+      <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-full text-xs font-bold">
+        <span>🚀</span>
+        <span>Versión 2.0 disponible ahora</span>
+      </div>
+
+      <!-- Títulos -->
+      <h1 class="text-4xl md:text-6xl font-black text-stone-900 tracking-tight max-w-3xl leading-tight">
+        Todo lo que necesitas en una sola plataforma.
+      </h1>
+      <p class="text-xs md:text-sm text-stone-500 max-w-xl leading-relaxed">
+        Gestiona tareas, equipos y proyectos con una interfaz ágil, rápida y completamente adaptable a tus requerimientos.
+      </p>
+
+      <!-- Buscador o Formulario de Entrada Rápida -->
+      <div class="w-full max-w-md flex flex-col sm:flex-row gap-2 pt-2">
+        <input 
+          type="email" 
+          placeholder="Ingresa tu correo corporativo..." 
+          class="flex-1 px-4 py-3 bg-stone-50 border border-stone-300 rounded-xl text-xs text-stone-800 focus:outline-none focus:border-stone-900 focus:bg-white transition"
+        >
+        <button class="px-6 py-3 bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase
