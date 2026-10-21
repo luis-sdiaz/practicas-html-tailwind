@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moléculas - Footers y Pies de Página</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 p-8 flex flex-col gap-12 font-sans text-stone-800">
+
+  <!-- ============================================================== -->
+  <!-- 1. FOOTER MINIMALISTA (1 línea: Copyright + Redes / Enlaces)   -->
+  <!-- ============================================================== -->
+  <div class="flex flex-col gap-2">
+    <span class="text-xs font-black uppercase tracking-wider text-orange-600">Variante 1: Minimalista (1 sola fila)</span>
+    <footer class="w-full bg-white border border-stone-200 rounded-2xl px-6 py-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
+      <span>© 2026 BrandName. Todos los derechos reservados.</span>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-stone-900 transition">Términos</a>
+        <a href="#" class="hover:text-stone-900 transition">Privacidad</a>
+        <a href="#" class="hover:text-stone-900 transition">Soporte</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- 2. FOOTER COMPLETO CORPORATIVO (Columnas + Newsletter)        -->
+  <!-- ============================================================== -->
+  <div class="flex flex-col gap-2">
+    <span class="text-xs font-black uppercase tracking-wider text-stone-500">Variante 2: Corporativo / E-Commerce (Multi-columna)</span>
+    <footer class="w-full bg-white border border-stone-200 rounded-3xl p-8 shadow-sm flex flex-col gap-8">
+      
+      <!-- Cuadrícula superior de columnas -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Columna 1: Marca + Descripción -->
+        <div class="flex flex-col gap-3 md:col-span-1">
+          <div class="flex items-center gap-2 font-black text-stone-900 text-sm">
+            <span class="w-7 h-7 bg-stone-900 text-white rounded-lg flex items-center justify-center text-xs">★</span>
+            <span>BRANDNAME</span>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Plataforma moderna diseñada para la gestión y escalabilidad de tu negocio en línea.
+          </p>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="flex flex-col gap-2 text-xs">
+          <span class="font-bold text-stone-900 uppercase tracking-wider text-[11px]">Navegación</span>
+          <a href="#" class="text-stone-500 hover:text-stone-900 transition">Inicio</a>
+          <a href="#" class="text-stone-500 hover:text-stone-900 transition">Servicios</a>
+          <a href="#" class="text-stone-500 hover:text-stone-900 transition">Precios</a>
+          <a href="#" class="text-stone-500 hover:text-stone-900 transition">Acerca de</a>
+        </div>
+
+        <!-- Columna 3: Legal / Contacto -->
+        <div class="flex flex-col gap-2 text-xs">
+          <span class="font-bold text-stone-900 uppercase tracking-wider text-[11px]">Soporte</span>
+          <a href="#" class="text-stone-500 hover:text-stone-900 transition">Centro de Ayuda</a>
+          <a href="#" class="text-stone-500 hover:text-stone-900 transition">Documentación</a>
+          <a href="#" class="text-stone-500 hover:text-stone-900 transition">Políticas</a>
+          <a href="#" class="text-stone-500 hover:text-stone-900 transition">Contacto</a>
+        </div>
+
+        <!-- Columna 4: Boletín / Suscripción -->
+        <div class="flex flex-col gap-3 text-xs">
+          <span class="font-bold text-stone-900 uppercase tracking-wider text-[11px]">Suscríbete</span>
+          <p class="text-[11px] text-stone-400">Recibe actualizaciones directas en tu correo.</p>
+          <div class="flex gap-2">
+            <input 
+              type="email" 
+              placeholder="correo@ejemplo.com" 
+              class="flex-1 px-3 py-2 bg-stone-50 border border-stone-200 rounded-xl text-xs focus:outline-none focus:bg-white focus:border-stone-400"
+            >
+            <button class="px-4 py-2 bg-stone-900 hover:bg-stone-800 text-white rounded-xl font-bold transition">
+              OK
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra inferior -->
+      <div class="pt-6 border-t border-stone-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-stone-400">
+        <span>© 2026 Plataforma UI. Hecho para desarrollo ágil.</span>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-stone-700">Términos del Servicio</a>
+          <a href="#" class="hover:text-stone-700">Aviso de Privacidad</a>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- 3. FOOTER OSCURO MODERNO (Tipo Dashboard / App)               -->
+  <!-- ============================================================== -->
+  <div class="flex flex-col gap-2">
+    <span class="text-xs font-black uppercase tracking-wider text-stone-500">Variante 3: Oscuro (Dashboard / SaaS)</span>
+    <footer class="w-full bg-stone-900 text-stone-400 rounded-2xl px-6 py-4 shadow-xl flex items-center justify-between text-xs">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="text-stone-300 font-medium">Todos los sistemas operativos</span>
+      </div>
+      <span>Versión 2.4.0</span>
+    </footer>
+  </div>
+
+</body>
+</html>
