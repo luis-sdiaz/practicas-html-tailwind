@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Tablas UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 text-stone-800 p-8 font-sans">
+
+  <div class="max-w-5xl mx-auto flex flex-col gap-10">
+
+    <header class="border-b border-stone-200 pb-4">
+      <h1 class="text-2xl font-black uppercase text-stone-900 tracking-tight">Catálogo de Tablas UI</h1>
+      <p class="text-xs text-stone-500">Estructuras de tablas completas y responsivas para copiar y pegar.</p>
+    </header>
+
+    <!-- ============================================================== -->
+    <!-- 1. TABLA CLÁSICA DE ADMINISTRACIÓN CON PAGINACIÓN              -->
+    <!-- ============================================================== -->
+    <section class="flex flex-col gap-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xs font-black uppercase tracking-wider text-orange-600">1. Tabla de Registros / Clientes</h2>
+        <!-- Buscador integrado -->
+        <input 
+          type="text" 
+          placeholder="Filtrar registros..." 
+          class="px-3 py-1.5 bg-white border border-stone-300 rounded-xl text-xs focus:outline-none focus:border-stone-900"
+        >
+      </div>
+
+      <!-- Contenedor con overflow horizontal para evitar desbordes -->
+      <div class="bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            
+            <!-- Encabezados -->
+            <thead>
+              <tr class="border-b border-stone-200 bg-stone-50 text-[11px] font-black uppercase tracking-wider text-stone-500">
+                <th class="py-3.5 px-6">Usuario / Cliente</th>
+                <th class="py-3.5 px-6">Rol / Cargo</th>
+                <th class="py-3.5 px-6">Estado</th>
+                <th class="py-3.5 px-6">Fecha</th>
+                <th class="py-3.5 px-6 text-right">Acciones</th>
+              </tr>
+            </thead>
+
+            <!-- Filas del cuerpo -->
+            <tbody class="divide-y divide-stone-100 text-xs">
+              
+              <!-- Fila 1 -->
+              <tr class="hover:bg-stone-50/80 transition">
+                <td class="py-4 px-6 flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-amber-400 font-black text-stone-900 flex items-center justify-center text-xs">
+                    JS
+                  </div>
+                  <div>
+                    <span class="font-bold text-stone-900 block leading-tight">James Smith</span>
+                    <span class="text-[10px] text-stone-400">james@example.com</span>
+                  </div>
+                </td>
+                <td class="py-4 px-6 text-stone-600">Administrador</td>
+                <td class="py-4 px-6">
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-700">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Activo
+                  </span>
+                </td>
+                <td class="py-4 px-6 text-stone-500 text-[11px]">20 Oct 2026</td>
+                <td class="py-4 px-6 text-right">
+                  <button class="px-2.5 py-1 text-[11px] font-bold text-stone-600 hover:text-stone-900 hover:bg-stone-100 rounded-lg transition">
+                    Editar
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Fila 2 -->
+              <tr class="hover:bg-stone-50/80 transition">
+                <td class="py-4 px-6 flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-sky-200 font-black text-sky-800 flex items-center justify-center text-xs">
+                    GH
+                  </div>
+                  <div>
+                    <span class="font-bold text-stone-900 block leading-tight">George Holoster</span>
+                    <span class="text-[10px] text-stone-400">george@example.com</span>
+                  </div>
+                </td>
+                <td class="py-4 px-6 text-stone-600">Editor</td>
+                <td class="py-4 px-6">
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-700">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                    Pendiente
+                  </span>
+                </td>
+                <td class="py-4 px-6 text-stone-500 text-[11px]">18 Oct 2026</td>
+                <td class="py-4 px-6 text-right">
+                  <button class="px-2.5 py-1 text-[11px] font-bold text-stone-600 hover:text-stone-900 hover:bg-stone-100 rounded-lg transition">
+                    Editar
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Fila 3 -->
+              <tr class="hover:bg-stone-50/80 transition">
+                <td class="py-4 px-6 flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-rose-200 font-black text-rose-800 flex items-center justify-center text-xs">
+                    DG
+                  </div>
+                  <div>
+                    <span class="font-bold text-stone-900 block leading-tight">Daniela Gordienko</span>
+                    <span class="text-[10px] text-stone-400">daniela@example.com</span>
+                  </div>
+                </td>
+                <td class="py-4 px-6 text-stone-600">Invitado</td>
+                <td class="py-4 px-6">
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-rose-100 text-rose-700">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                    Inactivo
+                  </span>
+                </td>
+                <td class="py-4 px-6 text-stone-500 text-[11px]">12 Oct 2026</td>
+                <td class="py-4 px-6 text-right">
+                  <button class="px-2.5 py-1 text-[11px] font-bold text-stone-600 hover:text-stone-900 hover:bg-stone-100 rounded-lg transition">
+                    Editar
+                  </button>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Barra inferior de paginación -->
+        <div class="py-3 px-6 bg-stone-50 border-t border-stone-200 flex items-center justify-between text-xs text-stone-500">
+          <span>Mostrando 3 de 24 resultados</span>
+          <div class="flex gap-2">
+            <button class="px-3 py-1 bg-white border border-stone-300 rounded-lg hover:bg-stone-100 text-stone-700 font-semibold disabled:opacity-50">
+              Anterior
+            </button>
+            <button class="px-3 py-1 bg-white border border-stone-300 rounded-lg hover:bg-stone-100 text-stone-700 font-semibold">
+              Siguiente
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 2. TABLA TIPO FACTURA / DETALLE DE COMPRA                      -->
+    <!-- ============================================================== -->
+    <section class="flex flex-col gap-4">
+      <h2 class="text-xs font-black uppercase tracking-wider text-stone-500">2. Tabla de Pedidos / Factura</h2>
+
+      <div class="bg-white rounded-3xl p-6 border border-stone-200 shadow-sm">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="border-b border-stone-200 text-[11px] font-black uppercase text-stone-400">
+              <th class="py-3">Producto</th>
+              <th class="py-3 text-center">Cant.</th>
+              <th class="py-3 text-right">Precio Unit.</th>
+              <th class="py-3 text-right">Total</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-100">
+            <tr>
+              <td class="py-3 font-bold text-stone-900">Pizza Pepperoni Familiar</td>
+              <td class="py-3 text-center text-stone-500">2</td>
+              <td class="py-3 text-right text-stone-500">$14.50</td>
+              <td class="py-3 text-right font-bold text-stone-900">$29.00</td>
+            </tr>
+            <tr>
+              <td class="py-3 font-bold text-stone-900">Bebida Gaseosa 1.5L</td>
+              <td class="py-3 text-center text-stone-500">1</td>
+              <td class="py-3 text-right text-stone-500">$4.00</td>
+              <td class="py-3 text-right font-bold text-stone-900">$4.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="border-t-2 border-stone-200 font-black text-sm">
+              <td colspan="3" class="py-4 text-right text-stone-500 uppercase text-xs">Total a Pagar:</td>
+              <td class="py-4 text-right text-orange-600 text-base">$33.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
