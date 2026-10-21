@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Formularios UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 text-stone-800 p-8 font-sans">
+
+  <div class="max-w-4xl mx-auto flex flex-col gap-10">
+
+    <header class="border-b border-stone-200 pb-4">
+      <h1 class="text-2xl font-black uppercase text-stone-900 tracking-tight">Catálogo de Formularios e Inputs UI</h1>
+      <p class="text-xs text-stone-500">Inputs, selectores, checkboxes y controles listos para Sublime Text.</p>
+    </header>
+
+    <!-- ============================================================== -->
+    <!-- 1. BUSCADORES Y ENTRADAS CON ICONOS                            -->
+    <!-- ============================================================== -->
+    <section class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm flex flex-col gap-4">
+      <h2 class="text-xs font-black uppercase tracking-wider text-orange-600">1. Buscadores y Campos con Icono</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <!-- Buscador con icono a la izquierda -->
+        <div class="relative">
+          <span class="absolute left-3.5 top-2.5 text-stone-400 text-sm">🔍</span>
+          <input 
+            type="text" 
+            placeholder="Buscar productos, órdenes o clientes..." 
+            class="w-full pl-10 pr-4 py-2.5 bg-stone-50 border border-stone-300 rounded-xl text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:border-stone-900 focus:bg-white transition"
+          >
+        </div>
+
+        <!-- Input de contraseña con icono a la derecha -->
+        <div class="relative">
+          <input 
+            type="password" 
+            placeholder="Introduce tu contraseña" 
+            class="w-full pl-4 pr-10 py-2.5 bg-stone-50 border border-stone-300 rounded-xl text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:border-stone-900 focus:bg-white transition"
+          >
+          <button type="button" class="absolute right-3.5 top-2.5 text-stone-400 hover:text-stone-700 text-xs">
+            👁
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 2. CAMPOS DE TEXTO ESTÁNDAR Y DESPLEGABLES                     -->
+    <!-- ============================================================== -->
+    <section class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm flex flex-col gap-4">
+      <h2 class="text-xs font-black uppercase tracking-wider text-stone-500">2. Inputs Básicos y Selects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Campo con etiqueta arriba -->
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-bold uppercase tracking-wider text-stone-700">
+            Nombre Completo
+          </label>
+          <input 
+            type="text" 
+            placeholder="Ej. Luis Díaz" 
+            class="px-4 py-2.5 bg-stone-50 border border-stone-300 rounded-xl text-xs text-stone-800 focus:outline-none focus:border-stone-900 focus:bg-white transition"
+          >
+        </div>
+
+        <!-- Menú Desplegable (Select) -->
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-bold uppercase tracking-wider text-stone-700">
+            Categoría del Menú
+          </label>
+          <select class="px-4 py-2.5 bg-stone-50 border border-stone-300 rounded-xl text-xs text-stone-800 focus:outline-none focus:border-stone-900 focus:bg-white transition cursor-pointer">
+            <option>Pizzas Tradicionales</option>
+            <option>Bebidas y Refrescos</option>
+            <option>Entradas y Pastas</option>
+            <option>Postres Italianos</option>
+          </select>
+        </div>
+
+        <!-- Campo con Prefijo Fijo (Ej. Precio con signo $) -->
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-bold uppercase tracking-wider text-stone-700">
+            Precio Unitario
+          </label>
+          <div class="flex rounded-xl overflow-hidden border border-stone-300 focus-within:border-stone-900">
+            <span class="bg-stone-200 px-3 py-2.5 text-xs font-bold text-stone-600 flex items-center justify-center">
+              $
+            </span>
+            <input 
+              type="number" 
+              placeholder="0.00" 
+              class="w-full px-3 py-2.5 bg-stone-50 text-xs text-stone-800 focus:outline-none focus:bg-white"
+            >
+          </div>
+        </div>
+
+        <!-- Área de Texto (Textarea) -->
+        <div class="flex flex-col gap-1.5 md:col-span-2">
+          <label class="text-xs font-bold uppercase tracking-wider text-stone-700">
+            Descripción o Notas
+          </label>
+          <textarea 
+            rows="3" 
+            placeholder="Escribe detalles adicionales aquí..." 
+            class="px-4 py-2.5 bg-stone-50 border border-stone-300 rounded-xl text-xs text-stone-800 focus:outline-none focus:border-stone-900 focus:bg-white transition resize-none"
+          ></textarea>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- 3. CHECKBOXES, RADIOS Y SWITCHES                               -->
+    <!-- ============================================================== -->
+    <section class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm flex flex-col gap-4">
+      <h2 class="text-xs font-black uppercase tracking-wider text-stone-500">3. Casillas de Selección y Switches</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Checkboxes -->
+        <div class="flex flex-col gap-2.5">
+          <span class="text-xs font-bold text-stone-700 block">Opciones Múltiples:</span>
+          
+          <label class="flex items-center gap-2.5 text-xs text-stone-600 cursor-pointer select-none">
+            <input type="checkbox" checked class="w-4 h-4 rounded text-orange-600 accent-orange-600">
+            <span>Masa delgada</span>
+          </label>
+
+          <label class="flex items-center gap-2.5 text-xs text-stone-600 cursor-pointer select-none">
+            <input type="checkbox" class="w-4 h-4 rounded text-orange-600 accent-orange-600">
+            <span>Extra queso mozzarella</span>
+          </label>
+        </div>
+
+        <!-- Radios (Selección única) -->
+        <div class="flex flex-col gap-2.5">
+          <span class="text-xs font-bold text-stone-700 block">Tamaño:</span>
+          
+          <label class="flex items-center gap-2.5 text-xs text-stone-600 cursor-pointer select-none">
+            <input type="radio" name="tamano" checked class="w-4 h-4 text-orange-600 accent-orange-600">
+            <span>Mediana (8 porciones)</span>
+          </label>
+
+          <label class="flex items-center gap-2.5 text-xs text-stone-600 cursor-pointer select-none">
+            <input type="radio" name="tamano" class="w-4 h-4 text-orange-600 accent-orange-600">
+            <span>Familiar (12 porciones)</span>
+          </label>
+        </div>
+
+        <!-- Switch / Toggle moderno -->
+        <div class="flex flex-col gap-2.5">
+          <span class="text-xs font-bold text-stone-700 block">Estado Activo:</span>
+          
+          <label class="flex items-center gap-3 cursor-pointer">
+            <div class="w-10 h-6 bg-stone-900 rounded-full p-1 flex items-center justify-end">
+              <div class="w-4 h-4 bg-white rounded-full shadow"></div>
+            </div>
+            <span class="text-xs text-stone-600 select-none">Notificaciones push</span>
+          </label>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
